@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://workbridge-recruiting.peachy-sugar-3131.chatgpt.site/sitemap.xml
