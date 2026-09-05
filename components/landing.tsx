@@ -29,7 +29,9 @@ import {
   SheetTitle,
   SheetTrigger,
 } from '@/components/ui/sheet';
-import { company, faq, process, services } from '@/app/data';
+import { company, faq, process as processSteps, services } from '@/app/data';
+
+const assetBase = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 const nav = [
   ['Услуги', '#services'],
@@ -139,7 +141,7 @@ export function Hero() {
         aria-label="Рабочая встреча рекрутера и кандидата"
       >
         <Image
-          src="/workbridge-hero.png"
+          src={`${assetBase}/workbridge-hero.png`}
           alt="Рекрутер беседует с кандидатом"
           fill
           priority
@@ -213,7 +215,7 @@ export function Process() {
         </h2>
       </div>
       <div className="process-list">
-        {process.map(([title, text], i) => (
+        {processSteps.map(([title, text], i) => (
           <article key={title}>
             <span>0{i + 1}</span>
             <div>
@@ -362,8 +364,8 @@ function Consent() {
     <label className="consent">
       <input type="checkbox" required />
       <span>
-        Согласен с <a href="/consent">условиями обработки данных</a> и
-        ознакомлен с <a href="/privacy">политикой конфиденциальности</a>.
+        Согласен с <a href={`${assetBase}/consent.html`}>условиями обработки данных</a> и
+        ознакомлен с <a href={`${assetBase}/privacy.html`}>политикой конфиденциальности</a>.
       </span>
     </label>
   );
@@ -490,8 +492,8 @@ export function Footer() {
           © {new Date().getFullYear()} {company.brandName}
         </span>
         <div>
-          <a href="/privacy">Политика конфиденциальности</a>
-          <a href="/consent">Обработка персональных данных</a>
+          <a href={`${assetBase}/privacy.html`}>Политика конфиденциальности</a>
+          <a href={`${assetBase}/consent.html`}>Обработка персональных данных</a>
         </div>
       </div>
     </footer>
