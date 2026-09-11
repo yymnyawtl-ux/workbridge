@@ -141,7 +141,7 @@ export function Hero() {
         aria-label="Рабочая встреча рекрутера и кандидата"
       >
         <Image
-          src={`${assetBase}/workbridge-hero.png`}
+          src={`${assetBase}/workbridge-hero-v2.png`}
           alt="Рекрутер беседует с кандидатом"
           fill
           priority
@@ -256,13 +256,21 @@ export function Audience() {
       </section>
       <section className="audience candidates reveal" id="candidates">
         <aside>
-          <UserRound />
-          <div className="profile-lines">
-            <i />
-            <i />
-            <i />
+          <div className="candidate-profile-head">
+            <UserRound />
+            <span>Профиль кандидата</span>
           </div>
-          <span>Открыты к диалогу</span>
+          <div className="candidate-profile-copy">
+            <small>Когда появится подходящая вакансия</small>
+            <strong>Свяжемся, познакомимся и обсудим следующий шаг.</strong>
+          </div>
+          <div className="candidate-profile-tags" aria-label="Преимущества для кандидата">
+            <span>Конфиденциально</span>
+            <span>Без лишних этапов</span>
+          </div>
+          <div className="candidate-profile-status">
+            <i /> Открыты к диалогу
+          </div>
         </aside>
         <div>
           <p className="section-label">Соискателям</p>
