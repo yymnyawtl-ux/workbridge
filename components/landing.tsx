@@ -495,7 +495,26 @@ export function Footer() {
           ))}
         </div>
       </div>
-      <div className="footer-bottom">
+            <div className="footer-company" aria-label="Реквизиты и контакты WorkBridge">
+        <div>
+          <span>Организация</span>
+          <strong>ИП Крейдер Ирина Александровна</strong>
+        </div>
+        <div>
+          <span>Реквизиты</span>
+          <p>ИНН 234104427303<br />ОГРНИП 326237500335221</p>
+        </div>
+        <div>
+          <span>Адрес</span>
+          <address>353762, Россия, Краснодарский край, Ленинградский район, посёлок Уманский, ул. 50 лет Октября, д. 14</address>
+        </div>
+        <div>
+          <span>Связаться</span>
+          <a href="mailto:workbridge278@gmail.com">workbridge278@gmail.com</a>
+          <a href="tel:+79928423645">+7 992 842-36-45</a>
+        </div>
+      </div>
+<div className="footer-bottom">
         <span>
           © {new Date().getFullYear()} {company.brandName}
         </span>
