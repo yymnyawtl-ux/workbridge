@@ -11,13 +11,13 @@ export type CompanyData = {
 
 export const company: CompanyData = {
   brandName: 'WorkBridge',
-  legalName: '',
-  inn: '',
+  legalName: 'Индивидуальный предприниматель Крейдер Ирина Александровна',
+  inn: '234104427303',
   ogrn: '',
-  ogrnip: '',
-  legalAddress: '',
-  phone: '',
-  email: '',
+  ogrnip: '326237500335221',
+  legalAddress: '353762, Россия, Краснодарский край, Ленинградский район, посёлок Уманский, улица 50 лет Октября, дом 14',
+  phone: '+7 992 842-36-45',
+  email: 'workbridge278@gmail.com',
 };
 
 export const services = [
