@@ -495,26 +495,18 @@ export function Footer() {
           ))}
         </div>
       </div>
-            <div className="footer-company" aria-label="Реквизиты и контакты WorkBridge">
-        <div>
-          <span>Организация</span>
-          <strong>ИП Крейдер Ирина Александровна</strong>
+                  <section className="footer-requisites" aria-labelledby="workbridge-requisites-title">
+        <p className="footer-requisites-label" id="workbridge-requisites-title">Контакты и реквизиты</p>
+        <a className="footer-requisites-phone" href={`tel:+${company.phone.replace(/\D/g, '')}`}>{company.phone}</a>
+        <a className="footer-requisites-email" href={`mailto:${company.email}`}>{company.email}</a>
+        <div className="footer-requisites-details">
+          <address>Юридический адрес: {company.legalAddress}</address>
+          <p>Наименование юридического лица: {company.legalName}</p>
+          <p>ИНН: {company.inn}</p>
+          <p>ОГРНИП: {company.ogrnip}</p>
         </div>
-        <div>
-          <span>Реквизиты</span>
-          <p>ИНН 234104427303<br />ОГРНИП 326237500335221</p>
-        </div>
-        <div>
-          <span>Адрес</span>
-          <address>353762, Россия, Краснодарский край, Ленинградский район, посёлок Уманский, ул. 50 лет Октября, д. 14</address>
-        </div>
-        <div>
-          <span>Связаться</span>
-          <a href="mailto:workbridge278@gmail.com">workbridge278@gmail.com</a>
-          <a href="tel:+79928423645">+7 992 842-36-45</a>
-        </div>
-      </div>
-<div className="footer-bottom">
+      </section>
+      <div className="footer-bottom">
         <span>
           © {new Date().getFullYear()} {company.brandName}
         </span>
