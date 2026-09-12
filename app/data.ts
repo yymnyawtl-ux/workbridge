@@ -16,8 +16,8 @@ export const company: CompanyData = {
   ogrn: '',
   ogrnip: '326237500335221',
   legalAddress: '353762, Россия, Краснодарский край, Ленинградский район, посёлок Уманский, улица 50 лет Октября, дом 14',
-  phone: '+7 992 842-36-45',
-  email: 'workbridge278@gmail.com',
+  phone: '+7 928 423-64-52',
+  email: 'workbridge2788@gmail.com',
 };
 
 export const services = [
